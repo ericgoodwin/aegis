@@ -1,5 +1,5 @@
 module Aegis
-  module Spec
+  module RSpec
     module Matchers
 
       class CheckPermissions
@@ -85,4 +85,3 @@ module Aegis
 end
 
 ActiveSupport::TestCase.send :include, Aegis::Spec::Matchers
-
