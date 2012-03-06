@@ -37,7 +37,7 @@ module Aegis
           actions_map = (options[:map] || {}).stringify_keys
           object_method = options[:object] || :object
           parent_object_method = options[:parent_object] || :parent_object
-          user_method = options[:user] || :current_user
+          user_method = options[:user] || :current_account
           permissions = lambda { Aegis::Permissions.app_permissions(options[:permissions]) }
 
           define_method :check_permissions do
